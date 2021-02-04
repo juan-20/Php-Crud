@@ -1,0 +1,102 @@
+/* config global */
+body{
+    margin: 0;
+    padding: 0;
+    background: #322f3d;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* config geral do form */
+.box{
+    width: 600px;
+    padding: 40px;
+    position: absolute;
+    /* ajusta no meio y*/
+    top: 50%;
+    /* ajusta no meio y */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e94560;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* config do h1 */
+.box h1{
+    color: black;
+}
+/* config os input */
+.box input[type = "text"], .box input[type = "password"], .box input[type="email"], .box input[type="number"], .box input[type="date"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #680e0e;
+    padding: 12px 10px;
+    color: white;
+    width: 300px;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+::placeholder {
+    color: #cece;
+}
+
+
+/* Quando o input esta selecionado aumenta */
+.box input[type = "text"]:focus,.box input[type = "password"]:focus, .box input[type="email"]:focus, .box input[type="number"]:focus,
+.box input[type="date"]:focus{
+    width: 380px;
+} 
+
+.box input[name="Cadastro"],  .box input[name="Login"]{
+    border: 0;
+    width: 160px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2d77a1;
+    padding: 14px 40px;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+/* config do input btn */
+.box input[type = "submit"]{
+    border: 0;
+    width: 160px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #21bf73;
+    padding: 14px 40px;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[name="Cadastro"]:hover, .box input[name="Login"]:hover {
+    background: #2d77a1;
+    width: 250px;
+}
+
+/* quando o mouse estiver em cima do botão o fundo muda */
+.box input[type = "submit"]:hover, box input[name="Login"]:hover {
+    background: #21bf73;
+    width: 250px;
+}
+
+::-webkit-scrollbar {
+    display: hidden;
+}

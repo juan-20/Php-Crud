@@ -1,0 +1,17 @@
+.fundo{
+    background-color: #322f3d;
+    color: #cecece;
+    cursor: progress;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.img{
+    width: 50rem;
+    background-position: center;
+}

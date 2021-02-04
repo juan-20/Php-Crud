@@ -1,0 +1,63 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: 24-Set-2020 às 13:47
+-- Versão do servidor: 5.7.24
+-- versão do PHP: 7.2.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `login`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuario`
+--
+
+DROP TABLE IF EXISTS `usuario`;
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id_cliente` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome_cliente` varchar(255) NOT NULL,
+  `email_cliente` varchar(255) NOT NULL,
+  `telefone_cliente` char(20) NOT NULL,
+  `senha_cliente` char(255) NOT NULL,
+  `data_nasc` date NOT NULL,
+  PRIMARY KEY (`id_cliente`)
+) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id_cliente`, `nome_cliente`, `email_cliente`, `telefone_cliente`, `senha_cliente`, `data_nasc`) VALUES
+(1, 'errou', 'juanalvesandrade@gmail.com', '9999999999', 'b3adcf26c076958c1a0ac5adbc5f62a6', '2002-12-20'),
+(6, 'cansado', 'o@o.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(7, 'adm', 'adm@adm.com', '(99) 9999-9990', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(4, 'e', 'e@e.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '1111-11-11'),
+(9, 'jaaaaaaaao', 'jao@gmail.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(10, 'analise', 'a@uiui.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(17, 'opa', 'opa@a.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(19, 'adm', 'adm@adm.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(20, 'q', 'q@q.com', '(99) 9999-9999', '98f13708210194c475687be6106a3b84', '2002-12-02'),
+(53, 'tim bernardes', 'a@a.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(52, 'tim maia', 'a@a.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02'),
+(50, 'q', 'q@q.com', '(99) 9999-9999', '202cb962ac59075b964b07152d234b70', '2002-12-02');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
